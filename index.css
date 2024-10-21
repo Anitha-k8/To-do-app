@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://img.freepik.com/premium-photo/futuristic-glowing-red-light-blue-gray-metallic-d-squares-background_208978-8965.jpg');
+    background-size: cover;
+    background-position: center; 
+}
+.container {
+    width: 800px;
+    height: auto;
+    margin-top:50px ;
+    min-height: 400px;
+    padding: 30px;
+    border: 2px solid #0b5a88a1;
+    border-radius: 7px;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    color:darkorange;
+    margin:15px;
+    margin-top: -10px;
+    font-family: 'Brush Script MT', cursive;
+
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    font-family: 'Brush Script MT', cursive;
+}
+#task-inputs {
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+    
+}
+
+input,
+textarea,
+select,
+button {
+    padding: 12px 15px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Brush Script MT', cursive;
+    border-radius:10px;
+    outline: none;
+    border: 2px solid rgb(123, 233, 233);
+    background: transparent;
+    color:white;
+
+}
+
+textarea {
+    resize: none;
+    color:white;
+    font-size:25px;
+    font-weight: bold;
+    font-family: 'Brush Script MT', cursive;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #b7d9eca1;
+}
+
+button {
+    background-color: #7ebfe4a1;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(34, 120, 241);
+}
+delete-btn {
+    background-color: #dc3545;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+    /* Darker red on hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Brush Script MT', cursive;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(180, 11, 115, 0.1);
+}
+
+li.low {
+    background-color: rgb(153, 240, 153);
+}
+
+li.medium {
+    background-color: rgb(251, 207, 125);
+}
+
+li.high {
+    background-color: rgb(238, 120, 120);
+}
+
+li.completed {
+    background-color: #f1f1f1;
+    color: #777;
+    text-decoration: line-through;
+}
+
+li .deadline-alert {
+    color: red;
+    font-weight: bold;
+    margin: 5px;
+}
+
+li button {
+    background-color: #d9534f;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    
+}
+
+li button:hover {
+    background-color: #c9302c;
+}
+
+.delete-all-button {
+    background-color: #b7d9eca1;
+    font-weight: bold;
+    color:red;
+    padding: 10px 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 15px;
+    
+}
+
+.delete-all-button:hover {
+    background-color: #c82333;
+    color:white;
+}
+
+@media (max-width: 770px) {
+    .container {
+        width: 90%;
+    }
+}
+select > option{
+    color:darkmagenta;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: lightgray;
+}
+

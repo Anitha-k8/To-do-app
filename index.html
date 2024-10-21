@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <fieldset class="container">
+    <h1>TO-DO APP</h1>
+    <div id="task-inputs">
+        <input type="text" id="title" placeholder="Task Title">
+        <textarea id="description" placeholder="Task Description"></textarea>
+        <input type="date" id="task-deadline">
+        <select id="task-priority">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select>
+        <select id="task-category">
+            <option value="work">Work</option>
+            <option value="personal">Personal</option>
+        </select>
+        <button onclick="deleteAllTasks()" class="delete-all-button">Delete All Tasks</button>
+
+            <button onclick="addTask()">Add Task</button>
+        </div>
+    </div>
+    <h2>Pending Tasks</h2>
+    <ul id="task-list"></ul>
+    <h2>Completed Tasks</h2>
+    <ul id="completed-tasks"></ul>
+    </div>
+    </fieldset>
+    <script src="index.js"></script>
+</body>
+</html>
